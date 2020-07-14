@@ -1,0 +1,15 @@
+alphabet: {a, b}
+start: q0
+accepting: {q3, q8}
+
+q0 (_ -> q1) (_ -> q5)
+q1 (a -> q2)
+q2 (b -> q3)
+q3 (a -> q4)
+q4 (b -> q3)
+q5 (a -> a6)
+q6 (b -> q7)
+q7 (a -> a8)
+q8 (a -> q9)
+q9 (b -> q10)
+q10 (a -> a8)
